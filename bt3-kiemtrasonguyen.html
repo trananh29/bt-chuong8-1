@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra so nguyen</title>
+</head>
+<body>
+
+<input type="text" id="num1" size="35" placeholder="Nhap so nguyen vao day"> <br>
+<button type="button" onclick="check()">Kiem tra</button> <br>
+<p id="result"> ket qua o day</p>
+<script>
+  function check() {
+    let a=parseInt(document.getElementById('num1').value);
+    if (a>0) {
+      document.getElementById('result').innerHTML="Ban nhap so lon hon 0";
+    } else {
+      document.getElementById('result').innerHTML='Ban nhap 0 hoac so nho hon 0';
+    }
+  }
+</script>
+</body>
+</html>

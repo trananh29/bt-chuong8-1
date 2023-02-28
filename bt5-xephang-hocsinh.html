@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xep hang hoc sinh</title>
+</head>
+<body>
+<input type="number" id="num" size="30" placeholder="Nhap so diem"> <br>
+<button type="button" onclick="check()">Kiem tra</button>
+<h2>Xep hang hoc luc hoc sinh</h2>
+<p id="result">Xep hang</p>
+<script>
+  function check() {
+    let a=parseFloat(document.getElementById('num').value);
+    if (a<5 && a>=0) {
+      document.getElementById('result').innerHTML="Hoc sinh xep loai kem"   ;
+    } else if (a>=5 && a<7) {
+      document.getElementById('result').innerHTML='Hoc sinh xep loai trung binh';
+    } else if (a>=7 && a<8) {
+      document.getElementById('result').innerHTML='Hoc sinh xep loai kha';
+    } else if (a>=8 && a<=10) {
+      document.getElementById('result').innerHTML='Hoc sinh xep loai gioi';
+    } else {
+      document.getElementById('result').innerHTML='ban nhap sai diem so';
+    }
+  }
+</script>
+</body>
+</html>

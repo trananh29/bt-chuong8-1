@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a chia het cho b?</title>
+</head>
+<body>
+<input type="number" id="num1" size="10"> <br>
+<input type="number" id="num2" size="10"> <br>
+<button type="button" onclick="check()">Kiemtra</button>
+<p id="result"></p>
+<script>
+
+  function check(){
+   let  a=document.getElementById('num1').value;
+    let b=document.getElementById("num2").value;
+
+    if (a%b==0) {
+      document.getElementById('result').innerHTML='so a chia het cho b';
+    } else {
+      document.getElementById('result').innerHTML='so a khong chia het cho b';
+    }
+
+  }
+
+</script>
+</body>
+</html>

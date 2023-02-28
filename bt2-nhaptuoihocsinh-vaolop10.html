@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhap dieu kien tuoi de hoc lop 10</title>
+</head>
+<body>
+<input type="text" id="num1" size="35" placeholder="Nhap so tuoi">
+<button type="button" onclick="check()">Kiem tra</button>
+<p id="message"></p>
+<script>
+
+  function check() {
+    let a=document.getElementById('num1').value;
+    let message= (a>15) ? 'Du tuoi hoc lop 10': 'Khong du tuoi hoc lop 10';
+    document.getElementById('message').innerHTML=message;
+
+  }
+</script>
+</body>
+</html>
